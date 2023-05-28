@@ -1,0 +1,331 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    background-color:#457462;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+.subHeadings>a{
+    text-decoration: none;
+    color: white;
+}
+.subHeadings{
+    display: flex;
+    gap: 30px;
+    margin-right: 30px ;
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 30%;
+    justify-content: space-evenly;
+}
+.logo>img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+.logo>p{
+    font-size: 1.5rem;
+    color: white;
+}
+.home{
+    display: flex;
+    flex-direction: row;
+}
+.carousel{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 50%;
+    height: 70vh;
+    align-items: center;
+    justify-content: center;
+}
+.icon{
+    width: 30px;  
+}
+.subicon{
+    padding: 10px;
+    color:rgb(32, 31, 31);
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+.icon:hover{
+    font-size: 1.7rem;
+    transition: .3s;
+}
+.subcar{
+    width: 70%;
+    overflow-x: hidden; 
+}
+.img{
+    width: 100%;
+    object-fit: cover;
+}
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    width: 400%;
+    height: 40vh;
+    position: relative;
+    animation: slideshow 20s infinite; 
+}
+@keyframes slideshow {
+    0% { left: 0; }
+    10% { left: 0; }
+    15% { left: -100%; }
+    25% { left: -100%; }
+    30% { left: -200%; }
+    40% { left: -200%; }
+    45% { left: -300%; }
+    55% { left: -300%; }
+    60% { left: -200%; }
+    70% { left: -200%; }
+    75% { left: -100%; }
+    85% { left: -100%; }
+    90% { left: 0%; }
+}
+.login{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loginform{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.loginform>input{
+    width: 250px;
+    padding: 10px;
+}
+.loginbut{
+    width: 250px;
+    padding: 8px;
+    cursor: pointer;
+    color: #f1f7f5;
+    background-color: rgb(6 37 16 / 88%);
+    font-weight: 400;
+}
+.services{
+    width: 100%;
+    padding: 20px;
+    background-color: rgb(149, 155, 161);
+}
+.servhead{
+    font-weight: 200;
+    color: white;
+    font-size: 2.4rem;
+    padding: 15px;
+}
+.allserv{
+    display: flex;
+    flex-direction: row;
+    gap: 3%;
+    padding: 20px;
+}
+.service1{
+    width: 30%;
+    height: 50px;
+    overflow: hidden;
+    background-color: white;
+    transition: width 1s, height 1s;
+    padding: 10px;
+    cursor: pointer;
+}
+.service1:hover{
+    width: 51%;
+    height:70vh;
+}
+.servp{
+    font-size: 1.4rem;
+    font-weight: 350;
+    padding-bottom: 10px;
+}
+.content{
+    padding: 15px 10px;
+}
+.service1>img{
+    width:100%;
+    padding: 15px;
+}
+.contact{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 100px;
+}
+.subcon{
+    width: 50%;
+}
+.conthead{
+    font-weight: 200;
+    font-size: 2.4rem;
+    padding: 15px;
+}
+.contact>table,th,td{
+    border: 0px solid black;
+    border-collapse: collapse;
+}
+.contact>div>tr,th,td{
+    padding: 30px;
+    text-align: left;
+}
+th{
+    font-size: 1.5rem;
+}
+tr,td{
+    font-size: 1.2rem;
+}
+tr:nth-child(even) {
+    background-color: #8dd8a2ae;
+}
+.indimg{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    position: relative;
+    cursor: pointer;
+}
+.imgsub{
+    width: 60%;
+}
+.absoluteimg0{
+    
+}
+.absoluteimg0:hover{
+    z-index: 2;
+}
+.absoluteimg1{
+    position: absolute;
+    z-index: 1;
+    top: 50px;
+    left: 50px;
+}
+.absoluteimg1:hover{
+    z-index: 2;
+}
+.absoluteimg2{
+    position: absolute;
+    z-index: 1;
+    top: 100px;
+    left: 100px;
+}
+.projects{
+    position: relative;
+    display: flex;
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+}
+.tn{
+    width: 100%;  
+    height: 90vh;
+    background-color: #457462; 
+}
+.procont{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    position: absolute;
+    z-index: 1;
+    padding: 5% 8%;
+}
+.headpro{
+    font-size: 3rem;
+    color: white;
+}
+.count{
+    font-size: 2.5rem;
+    color: white;
+    margin: 10px;
+    font-weight: 300;
+}
+.keyco{
+    font-size: 1.5rem;
+    color: white;
+}
+.knowmore{
+    cursor: pointer;
+   margin: 18px;
+   padding: 15px;
+   color: #012014;
+   background-color: white;
+   font-weight: 400;
+   font-size: 1.2rem;
+}
+
+@media only screen and (max-width:575px){
+    *{
+        align-items: center;
+    }
+    .header{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .logo{
+        width: 100%;
+        justify-content: flex-start;
+    }
+    .logo>img{
+        margin: 0px 15px;
+    }
+    .home{
+        flex-direction: column;
+    }
+    .carousel{
+        width: auto;
+        height: 50vh;
+        gap:5px;
+    }
+    .service1:hover{
+        width: 100%;
+        height:70vh;
+    }
+    .subcar{
+        width: auto;
+    }
+    .loginform{
+        margin: 30px 0px 50px 0px;
+    }
+    .service1{
+        width: auto;
+    }
+    .allserv{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .contact{
+        flex-direction: column;
+        gap:10px
+    }
+    .subcon{
+        width: auto;
+    }
+    .indimg{
+        display: none;
+    }
+    .contact>div>tr, th, td {
+         padding: 26px;
+    }
+    table{
+        padding: 0px;
+    }
+    .procont{
+        padding: 0px 10px;
+    }
+    .icon{
+        display: none;
+    }
+}
